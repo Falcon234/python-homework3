@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музичний Плейлист</title>
+    <style>
+        body { font-family: sans-serif; background: #121212; color: #fff; padding: 20px; text-align: center; }
+        .playlist-container { max-width: 500px; margin: 0 auto; background: #1e1e1e; padding: 20px; border-radius: 8px; }
+        .btn { background: #1db954; color: white; border: none; padding: 10px 20px; margin: 10px; border-radius: 20px; cursor: pointer; font-weight: bold; }
+        .btn:hover { background: #1ed760; }
+        .btn-orange { background: #ff5500; }
+        .btn-orange:hover { background: #ff7733; }
+        ul { list-style: none; padding: 0; text-align: left; }
+        li { padding: 10px; border-bottom: 1px solid #333; }
+        #random-box { margin-top: 20px; padding: 15px; background: #282828; border-left: 5px solid #1db954; border-radius: 4px; display: none; }
+    </style>
+</head>
+<body>
+
+    <div class="playlist-container">
+        <h1>Мій Музичний Плейлист 🎵</h1>
+        <button id="load-songs-btn" class="btn">Завантажити пісні з файлу</button>
+        <button id="random-song-btn" class="btn btn-orange" style="display: none;">🎯 Випадкова пісня</button>
+
+        <div id="random-box">
+            <strong>Зараз лунає:</strong> <span id="random-song-title"></span>
+        </div>
+
+        <ul id="playlist"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
